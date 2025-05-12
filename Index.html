@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Utopia - Anime Community</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Montserrat&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      overflow: hidden;
+      background: radial-gradient(circle, #1a1a2e, #0f0c29, #000000);
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 0 20px;
+      color: #f5f3ff;
+      text-shadow: 0 0 10px #b388ff;
+    }
+
+    h1 {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 4em;
+      margin-bottom: 0.3em;
+      color: #d8b4fe;
+    }
+
+    p {
+      font-size: 1.3em;
+      margin-bottom: 1.2em;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #9f7aea, #805ad5);
+      color: white;
+      padding: 15px 40px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px #a78bfa;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #b794f4, #6b46c1);
+      box-shadow: 0 0 25px #d6bcfa;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="content">
+    <h1>Utopia</h1>
+    <p>Your new home for anime, fantasy, and friendship.<br>Join our magical community!</p>
+    <a href="https://discord.gg/tSwWrDEjSM" target="_blank" class="btn">Join Now</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 100
+        },
+        "color": {
+          "value": "#d8b4fe"
+        },
+        "shape": {
+          "type": "circle"
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": true
+        },
+        "size": {
+          "value": 3,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 120,
+          "color": "#a78bfa",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 1.5
+        }
+      },
+      "interactivity": {
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
